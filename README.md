@@ -67,18 +67,18 @@ Make sure node_modules/ is excluded from version control by adding this line in 
      
 ### ⚙️ Backend (FastAPI + Gemini)
      
-`cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload`  
+`cd backend`  
+`pip install -r requirements.txt`  
+`uvicorn main:app --reload`    
   
 Backend runs on http://127.0.0.1:8000  
     
 Open Swagger docs: http://127.0.0.1:8000/docs    
   
 ⚛️ Frontend (React)  
-`cd frontend
-npm install
-npm run dev`
+`cd frontend`  
+`npm install`  
+`npm run dev`  
 Frontend runs on http://localhost:5173  
 
 🔑 Setup Gemini API  
