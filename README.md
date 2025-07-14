@@ -50,7 +50,6 @@ smart-assistant/
 
 ### ⚙️ Backend (FastAPI + Gemini)
 
-```bash
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
@@ -60,9 +59,6 @@ Backend runs on http://127.0.0.1:8000
 Open Swagger docs: http://127.0.0.1:8000/docs
 
 ⚛️ Frontend (React)
-bash
-Copy
-Edit
 cd frontend
 npm install
 npm run dev
@@ -70,15 +66,9 @@ Frontend runs on http://localhost:5173
 
 🔑 Setup Gemini API
 In main.py:
-
-python
-Copy
-Edit
 genai.configure(api_key="YOUR_GEMINI_API_KEY")
 Get your API key from: https://makersuite.google.com/app/apikey
 
-📸 Preview
-Add screenshots here (e.g., summary preview, quiz UI, etc.)
 
 📄 License
 MIT License. Use freely for learning and personal projects.
