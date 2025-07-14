@@ -23,4 +23,65 @@ Built with **React (Vite)** for frontend, **FastAPI** for backend, and **Gemini 
 ---
 
 ## 📁 Project Structure
+smart-assistant/
+├── backend/ # FastAPI server
+│ ├── main.py
+│ └── requirements.txt
+│
+├── frontend/ # React + Vite frontend
+│ ├── public/
+│ │ └── index.html
+│ ├── src/
+│ │ ├── App.jsx
+│ │ ├── main.jsx
+│ │ ├── index.css / style.css
+│ │ └── components/
+│ │ ├── FileUpload.jsx
+│ │ ├── SummaryCard.jsx
+│ │ ├── AskSection.jsx
+│ │ └── ChallengeSection.jsx
+│ ├── package.json
+│ └── vite.config.js
 
+
+---
+
+## 🛠️ Installation & Run Locally
+
+### ⚙️ Backend (FastAPI + Gemini)
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+
+Backend runs on http://127.0.0.1:8000
+
+Open Swagger docs: http://127.0.0.1:8000/docs
+
+⚛️ Frontend (React)
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm run dev
+Frontend runs on http://localhost:5173
+
+🔑 Setup Gemini API
+In main.py:
+
+python
+Copy
+Edit
+genai.configure(api_key="YOUR_GEMINI_API_KEY")
+Get your API key from: https://makersuite.google.com/app/apikey
+
+📸 Preview
+Add screenshots here (e.g., summary preview, quiz UI, etc.)
+
+📄 License
+MIT License. Use freely for learning and personal projects.
+
+🙌 Author
+Made with 💻 and ☕ by Abhinav Mishra
