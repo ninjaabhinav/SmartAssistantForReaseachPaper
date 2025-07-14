@@ -47,26 +47,43 @@ smart-assistant/
 ---
 
 ## 🛠️ Installation & Run Locally
+## 📦 Frontend Setup Instructions (React + Vite)
+🛠️ To set up the frontend:
+Step 1: Navigate to the frontend directory
+`cd frontend`
+Step 2: Install dependencies and generate node_modules/
+`npm install`
+This command uses package.json to install all required packages.
+
+Step 3: Run the development server
+`npm run dev`
+Your React app will be available at:
+🔗 http://localhost:5173
+
+🔒 Note on .gitignore
+Make sure node_modules/ is excluded from version control by adding this line in .gitignore:
+
+`node_modules/`
 
 ### ⚙️ Backend (FastAPI + Gemini)
 
-cd backend
+`cd backend
 pip install -r requirements.txt
-uvicorn main:app --reload
+uvicorn main:app --reload`
 
 Backend runs on http://127.0.0.1:8000
 
 Open Swagger docs: http://127.0.0.1:8000/docs
 
 ⚛️ Frontend (React)
-cd frontend
+`cd frontend
 npm install
-npm run dev
+npm run dev`
 Frontend runs on http://localhost:5173
 
 🔑 Setup Gemini API
 In main.py:
-genai.configure(api_key="YOUR_GEMINI_API_KEY")
+`genai.configure(api_key="YOUR_GEMINI_API_KEY")`
 Get your API key from: https://makersuite.google.com/app/apikey
 
 
