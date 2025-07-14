@@ -7,7 +7,7 @@ import json
 import os
 
 # 🔐 Configure Gemini API Key
-genai.configure(api_key="YAIzaSyBH5_9MXdfDnapKXupnkw6AIZ1XiPA6rRE")  # ← Replace with your actual key
+genai.configure(api_key="YOUR_GEMINI_API_KEY") # ← Replace with your actual key
 model = genai.GenerativeModel(model_name="gemini-pro")
 
 # 🚀 Initialize FastAPI app
